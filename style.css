@@ -301,3 +301,38 @@ body.photo-viewer-open{overflow:hidden}
 /* v31: functional review refinements */
 .calendar-row-fixed{display:flex;justify-content:center;align-items:center}
 .rsvp-privacy-note{text-align:center;max-width:320px;margin:19px auto 0;font-size:10px;color:#897b6f;line-height:1.8;word-break:keep-all}
+
+
+/* v38: understated editorial motion — no layout or content changes */
+@keyframes w38HeroReveal {from{opacity:0;transform:translateY(23px)}to{opacity:1;transform:translateY(0)}}
+@keyframes w38HeroImage {from{transform:scale(1.075);filter:brightness(.82)}to{transform:scale(1);filter:brightness(1)}}
+@keyframes w38Nudge {0%,100%{transform:translateY(0)}55%{transform:translateY(7px)}}
+@keyframes w38ViewerShow {from{opacity:0}to{opacity:1}}
+@keyframes w38ViewerImg {from{opacity:.65;transform:scale(.975)}to{opacity:1;transform:scale(1)}}
+@keyframes w38PanelSwitch {from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hero{isolation:isolate}
+.hero>img{animation:w38HeroImage 2.8s cubic-bezier(.16,1,.3,1) both}
+.hero-top{animation:w38HeroReveal .95s .2s both}
+.hero-copy h1{animation:w38HeroReveal 1.25s .48s cubic-bezier(.16,1,.3,1) both}
+.hero-copy p{animation:w38HeroReveal 1s .94s both}
+.hero .scroll{animation:w38HeroReveal .9s 1.5s both}
+.hero .scroll span{animation:w38Nudge 2.5s 2.6s ease-in-out infinite}
+/* Start hidden only after JS has activated the observer. */
+.motion-ready .motion-item{opacity:0;transform:translateY(28px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .95s cubic-bezier(.2,.7,.2,1);transition-delay:var(--motion-delay,0ms)}
+.motion-ready .motion-item.motion-in{opacity:1;transform:translateY(0)}
+.motion-ready .gallery-item.motion-item{transform:translateY(24px) scale(.985)}
+.motion-ready .gallery-item.motion-item.motion-in{transform:translateY(0) scale(1)}
+.motion-ready .inv-photo.motion-item{transform:translateY(28px) scale(.975)}
+.motion-ready .inv-photo.motion-item.motion-in{transform:translateY(0) scale(1)}
+.motion-ready .closing-line.motion-item{transform:scaleY(.25);transform-origin:top}
+.motion-ready .closing-line.motion-item.motion-in{transform:scaleY(1)}
+.calendar-save,.transport-buttons a,.account-copy,.gift-tabs button,.map-preview,#shareBtn{transition:transform .32s ease,background-color .32s ease,box-shadow .32s ease,opacity .32s ease}
+@media(hover:hover){.calendar-save:hover,.transport-buttons a:hover,.map-preview:hover{transform:translateY(-3px);box-shadow:0 9px 20px #2c22171a}.account-copy:hover,#shareBtn:hover{transform:translateY(-2px)}}
+.calendar-save:active,.transport-buttons a:active,.account-copy:active{transform:scale(.985)}
+.gift-panel.account-list{animation:w38PanelSwitch .45s ease both}
+.photo-viewer:not([hidden]){animation:w38ViewerShow .24s ease-out both}
+.photo-viewer:not([hidden]) #photoViewerImg{animation:w38ViewerImg .32s cubic-bezier(.2,.7,.2,1) both}
+@media(prefers-reduced-motion:reduce){
+ .hero>img,.hero-top,.hero-copy h1,.hero-copy p,.hero .scroll,.hero .scroll span,.photo-viewer,.photo-viewer #photoViewerImg,.gift-panel.account-list{animation:none!important}
+ .motion-ready .motion-item,.motion-ready .gallery-item.motion-item,.motion-ready .inv-photo.motion-item,.motion-ready .closing-line.motion-item{opacity:1!important;transform:none!important;transition:none!important}
+}

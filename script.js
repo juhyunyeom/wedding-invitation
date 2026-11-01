@@ -115,3 +115,40 @@ $('#shareBtn').addEventListener('click',async()=>{if(location.protocol==='file:'
   viewer.addEventListener('gesturechange',e=>e.preventDefault(),{passive:false});
   viewer.addEventListener('wheel',e=>{if(e.ctrlKey)e.preventDefault();},{passive:false});
 })();
+
+
+// v38: progressive enhancement. Motion does not affect gallery, links or form functionality.
+(() => {
+ const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if (reduceMotion || !('IntersectionObserver' in window)) return;
+ const groups = [
+  ['#invitation .section-no', '#invitation .inv-photo', '#invitation .inv-copy', '#invitation .hairline', '#invitation .couple-names', '#invitation .family'],
+  ['#wedding .section-no', '#wedding .date-art', '#wedding .date-intro', '#wedding .calendar-row', '#wedding .calendar-grid', '#wedding .count-wrap', '#wedding .calendar-save'],
+  ['#location .section-no', '#location .location-photo', '#location .location-accent', '#location .location-info', '#location .map-preview', '#location .transport-buttons', '#location .parking'],
+  ['#gallery .section-no', '#gallery .gallery-editorial-head', ...Array.from({length:8},(_,i)=>`#gallery .gallery-item:nth-child(${i+1})`)],
+  ['#gift .section-no', '#gift .gift-inner h2', '#gift .gift-copy', '#gift .subtle-divider', '#gift .gift-tabs', '#gift .gift-panel', '#gift .gift-footnote'],
+  ['.closing .closing-line', '.closing .closing-copy', '.closing .closing-content>span']
+ ];
+ const nodes=[];
+ groups.forEach(group=>group.forEach((selector,i)=>{
+   const el=document.querySelector(selector);
+   if(!el)return;
+   el.classList.add('motion-item');
+   el.style.setProperty('--motion-delay', `${Math.min(i,5)*65}ms`);
+   nodes.push(el);
+ }));
+ const observer=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+     if(!entry.isIntersecting)return;
+     entry.target.classList.add('motion-in');
+     observer.unobserve(entry.target);
+   });
+ },{rootMargin:'0px 0px -35px 0px',threshold:.08});
+ document.documentElement.classList.add('motion-ready');
+ nodes.forEach(el=>observer.observe(el));
+ // Display already visible content immediately if user navigated to a hash/position.
+ requestAnimationFrame(()=>nodes.forEach(el=>{
+   const r=el.getBoundingClientRect();
+   if(r.bottom>0 && r.top<window.innerHeight*.82)el.classList.add('motion-in');
+ }));
+})();
