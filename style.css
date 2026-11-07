@@ -394,3 +394,49 @@ html, body{scroll-behavior:auto;overscroll-behavior-y:auto}
   height:auto;
   object-fit:contain;
 }
+
+
+/* v52 — touch-first scroll stability and GPU-efficient rendering.
+   Keep the original layout, gallery, lightbox and desktop animations. */
+@media (hover: none), (pointer: coarse) {
+  /* Full-section fades/transforms and nested animated children used to
+     repaint many layers while finger-scrolling on mobile Safari. */
+  .reveal, .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .motion-ready .motion-item,
+  .motion-ready .motion-item.motion-in,
+  .motion-ready .gallery-item.motion-item,
+  .motion-ready .gallery-item.motion-item.motion-in,
+  .motion-ready .inv-photo.motion-item,
+  .motion-ready .inv-photo.motion-item.motion-in,
+  .motion-ready .closing-line.motion-item,
+  .motion-ready .closing-line.motion-item.motion-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    transition-delay: 0ms !important;
+  }
+  /* Avoid costly large-image brightness filters and zoom animations. */
+  .hero>img {
+    animation: none !important;
+    filter: none !important;
+    transform: none !important;
+  }
+  .hero .scroll span { animation: none !important; }
+  .gift-panel.account-list {animation: none !important;}
+  #gallery .gallery-refined.gallery-curated .gallery-item img {
+    transition: none !important;
+    transform: none !important;
+  }
+  /* Keep tap feedback, remove animations of large lightbox layers. */
+  .photo-viewer:not([hidden]),
+  .photo-viewer:not([hidden]) #photoViewerImg { animation: none !important; }
+}
+/* Lower the cost of the full-width hero animation on larger screens too. */
+@keyframes w52HeroImageLite {from{transform:scale(1.025)}to{transform:scale(1)}}
+@media (hover: hover) and (pointer: fine) {
+  .hero>img {animation:w52HeroImageLite 1.4s ease-out both}
+}

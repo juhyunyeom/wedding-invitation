@@ -1,6 +1,14 @@
 const $=s=>document.querySelector(s);const toast=msg=>{const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),2600)};
 const nav=$('#nav');$('#menuBtn').addEventListener('click',()=>{nav.classList.toggle('open');$('#menuBtn').setAttribute('aria-expanded',String(nav.classList.contains('open')))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-if('IntersectionObserver' in window){const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ob.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>ob.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+// v52: iPhone/touch browsers scroll without scroll-triggered reveal observers.
+// Avoid repeated layout/compositing work as large sections and gallery tiles enter view.
+const isTouchScroll = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+if (!isTouchScroll && 'IntersectionObserver' in window) {
+  const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ob.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+}
 const eventDate=new Date('2027-01-02T17:20:00+09:00');function updateCountdown(){const delta=eventDate-new Date();const el=$('#countdown');if(delta<=0){el.textContent='소중한 날을 함께해 주셔서 감사합니다.';return}const days=Math.floor(delta/86400000);const hours=Math.floor(delta%86400000/3600000);el.textContent=`우리의 결혼식까지 D-${days} · ${hours}시간 남았어요`;}updateCountdown();setInterval(updateCountdown,60000);
 $('#calendarBtn').addEventListener('click',()=>{const content=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//KO','CALSCALE:GREGORIAN','BEGIN:VEVENT','UID:byungwoon-juhyun-20270102@wedding.local','DTSTAMP:20261012T000000Z','DTSTART:20270102T082000Z','DTEND:20270102T092000Z','SUMMARY:병운과 주현의 결혼식','LOCATION:더바실리움 8층\\, 경기도 성남시 분당구 양현로 322','DESCRIPTION:병운과 주현의 결혼식에 초대합니다.','END:VEVENT','END:VCALENDAR'].join('\r\n');const url=URL.createObjectURL(new Blob([content],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='병운-주현-결혼식.ics';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);toast('캘린더 일정 파일을 저장했어요')});
 async function copy(text, successMessage='계좌번호를 복사했어요', fallbackMessage='자동 복사가 제한되어 있습니다. 계좌번호를 길게 눌러 복사해 주세요.'){
@@ -120,7 +128,7 @@ $('#shareBtn').addEventListener('click',async()=>{if(location.protocol==='file:'
 // v38: progressive enhancement. Motion does not affect gallery, links or form functionality.
 (() => {
  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- if (reduceMotion || !('IntersectionObserver' in window)) return;
+ if (reduceMotion || isTouchScroll || !('IntersectionObserver' in window)) return;
  const groups = [
   ['#invitation .section-no', '#invitation .inv-photo', '#invitation .inv-copy', '#invitation .hairline', '#invitation .couple-names', '#invitation .family'],
   ['#wedding .section-no', '#wedding .date-art', '#wedding .date-intro', '#wedding .calendar-row', '#wedding .calendar-grid', '#wedding .count-wrap', '#wedding .calendar-save'],

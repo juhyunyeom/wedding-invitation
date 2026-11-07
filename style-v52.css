@@ -1,0 +1,442 @@
+:root{--paper:#f7f3ec;--ink:#2b2925;--muted:#8f887e;--line:#d9d1c7;--taupe:#9a8976;--deep:#071827}*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#e9e4dc;color:var(--ink);font-family:'Noto Serif KR','Cormorant Garamond',serif;font-weight:300;-webkit-font-smoothing:antialiased}.site{max-width:480px;margin:auto;background:var(--paper);overflow:clip;box-shadow:0 0 45px #00000012}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}p,h1,h2,h3{margin-top:0}.section-no{font:500 9px 'Manrope',sans-serif;letter-spacing:.28em;color:#8c857a;text-transform:uppercase;margin-bottom:28px}.hero{height:100svh;min-height:660px;position:relative;color:#fff;background:var(--deep)}.hero>img{width:100%;height:100%;object-fit:cover;object-position:center}.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,#00101d33 0%,#00101d08 33%,#02090f45 68%,#010509c7 100%)}.hero-top{position:absolute;z-index:2;left:28px;right:28px;top:30px;display:flex;justify-content:space-between;font:500 10px/1.85 'Manrope',sans-serif;letter-spacing:.22em}.menu{border:0;background:none;color:#fff;font:inherit;letter-spacing:.15em}.menu span{font-size:16px;margin-left:6px}.hero-copy{position:absolute;z-index:2;left:0;right:0;bottom:12.5%;text-align:center;padding:0 10px}.hero-copy h1{font-family:'Italianno','Cormorant Garamond',serif;font-size:clamp(58px,15vw,82px);font-weight:400;line-height:.72;margin:0 -22px 34px;white-space:nowrap;text-shadow:0 2px 22px #0008}.hero-copy p{font:500 10px 'Manrope',sans-serif;letter-spacing:.23em;margin:0}.hero-copy i{font-style:normal;margin:0 5px}.scroll{position:absolute;z-index:2;bottom:27px;left:0;right:0;text-align:center;font:500 8px 'Manrope',sans-serif;letter-spacing:.24em}.scroll span{display:block;font-size:17px;margin-top:9px}.nav{display:none;position:fixed;z-index:20;top:0;left:50%;transform:translateX(-50%);width:min(100%,480px);padding:92px 30px 45px;background:#11100fee;color:#fff;flex-direction:column;gap:22px;font:400 15px 'Manrope',sans-serif;letter-spacing:.12em}.nav.open{display:flex}.invitation,.wedding,.location,.gallery,.gift,.rsvp{padding:78px 30px;text-align:center}.invitation{padding-top:70px}.inv-photo{display:block;width:84%;height:auto;margin:0 auto;filter:grayscale(1);box-shadow:0 1px 0 #00000010}.inv-copy{font-size:13px;line-height:2.0;letter-spacing:-.03em;word-break:keep-all;margin:34px 0 25px}.hairline{width:30px;height:1px;background:#a9a094;margin:0 auto 22px}.couple-names{font-size:14px;letter-spacing:.3em;margin:0 0 17px}.couple-names span{color:#aaa093;margin:0 7px}.family{font-size:10.5px;line-height:2.1;color:#777067;margin:0}.family b{font-weight:400;color:#35312c}.wedding{background:#f3efe8}.date-art strong{display:block;font:500 86px/.85 'Cormorant Garamond',serif;letter-spacing:-.08em}.date-art span{display:block;font:500 10px 'Manrope',sans-serif;letter-spacing:.35em;margin-top:14px}.date-intro{font-size:12px;line-height:2.0;margin:34px 0}.date-intro b{font-weight:400}.calendar-row{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;margin:20px 0 13px;font:500 15px 'Cormorant Garamond',serif}.month-arrow{border:0;background:none;color:#8f877e;font-size:25px}.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px 2px;font:500 10px 'Manrope',sans-serif;color:#665f56}.calendar-grid span{height:26px;display:flex;align-items:center;justify-content:center}.calendar-grid .weekday{font-size:8px;letter-spacing:.14em;color:#a0978d}.calendar-grid .wedding-day{width:27px;height:27px;border-radius:50%;background:#554c43;color:#fff;justify-self:center}.count-wrap{border-top:1px solid var(--line);margin-top:22px;padding-top:20px;font-size:11px;color:#6f685f}.calendar-save{border:0;width:100%;margin-top:20px;background:#93816e;color:#fff;padding:15px 18px;display:grid;grid-template-columns:28px 1fr 15px;align-items:center;text-align:left}.cal-icon{font-size:15px}.calendar-save>span:nth-child(2){font-size:13px;text-align:center}.calendar-save b{font:300 22px sans-serif}.location{text-align:left}.location-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}.location-head h2{font-size:23px;font-weight:400;letter-spacing:-.06em;margin:0 0 8px}.location-head p{font-size:12px;line-height:1.7;color:#70685f;margin:0}.location-head>span{font-size:25px;color:#968c81}.map-art{height:220px;position:relative;overflow:hidden;background:linear-gradient(20deg,#ece8e1 0 48%,#e2ddd5 48% 50%,#f0ece6 50% 100%);border:1px solid #e5dfd6;display:flex;align-items:center;justify-content:center;flex-direction:column}.road{position:absolute;background:#d4cec5}.r1{width:130%;height:12px;transform:rotate(16deg)}.r2{width:120%;height:10px;transform:rotate(-25deg)}.r3{width:9px;height:130%;transform:rotate(20deg)}.r4{width:7px;height:130%;transform:rotate(-48deg)}.map-pin{z-index:1;width:29px;height:29px;border-radius:50%;background:#514a43;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px}.map-art strong{z-index:1;font-size:11px;text-align:center;margin-top:7px;font-weight:500}.copy-address{border:0;background:none;padding:12px 0 0;color:#83796f;font-size:11px;text-decoration:underline;text-underline-offset:4px}.transport-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0 38px;text-align:center}.transport-buttons a{border:1px solid #ddd6cd;padding:14px 2px 12px;display:flex;flex-direction:column;gap:7px;align-items:center;font-size:10px}.transport-buttons b{font-size:20px;font-weight:300}.parking{border-top:1px solid var(--line);padding-top:24px}.parking h3{font:500 9px 'Manrope',sans-serif;letter-spacing:.2em;margin-bottom:12px}.parking p{font-size:11px;line-height:1.9;color:#756e65;margin:0}.gallery{padding-bottom:70px}.gallery-grid.editorial{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:250px 155px 220px;gap:6px}.photo-tile{border:0;padding:0;overflow:hidden;background:#ddd}.photo-tile img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.photo-tile:hover img{transform:scale(1.03)}.photo-tile.a{grid-row:1/3}.photo-tile.b{grid-column:2;grid-row:1}.photo-tile.c{grid-column:2;grid-row:2/4}.photo-tile.d{grid-column:1;grid-row:3}.gift{background:#f3efe8;text-align:left}.gift-visual{height:235px;margin:-12px -2px 30px;background:linear-gradient(135deg,#d9d0c4,#f6f1e9 48%,#cfc4b7);position:relative;overflow:hidden}.gift-visual:before,.gift-visual:after{content:'';position:absolute;border-radius:50%;background:#fff8;filter:blur(2px)}.gift-visual:before{width:190px;height:190px;left:-60px;top:50px}.gift-visual:after{width:160px;height:160px;right:-40px;top:-25px}.gift-visual p{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-4deg);background:#f4eee5;padding:27px 34px;font:400 11px/1.8 'Cormorant Garamond',serif;letter-spacing:.14em;text-align:center;white-space:nowrap;color:#74695d;box-shadow:0 10px 35px #0001}.gift h2,.rsvp h2{font-size:20px;font-weight:400;letter-spacing:-.05em;margin:0 0 18px}.gift-copy{font-size:12px;line-height:2.0;color:#625b53}.tabs{display:flex;margin:28px 0 18px;border-bottom:1px solid #cfc7bd}.tabs button{width:50%;padding:12px;background:none;border:0;color:#9c958b;font-size:12px}.tabs button.active{color:#302c27;border-bottom:1px solid #302c27}.gift-panel{background:#f9f6f0;border:1px solid #e2dbd2;padding:25px 18px;text-align:center;font-size:12px;color:#786f65}.rsvp{text-align:center}.rsvp-visual{height:230px;margin:-10px 0 32px;background:linear-gradient(145deg,#7a624d,#c9ae8c 45%,#3d3025);position:relative;overflow:hidden}.rsvp-visual:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 22%,#ffe5ae88 0 4%,transparent 5%),radial-gradient(circle at 15% 80%,#ffffff20 0 12%,transparent 13%)}.date-card{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%) rotate(-4deg);background:#eee5d7;color:#6d5e50;padding:22px 26px;font:500 42px/1 'Cormorant Garamond',serif;box-shadow:0 12px 28px #0002}.date-card small{display:block;font:500 8px 'Manrope',sans-serif;letter-spacing:.18em;margin-top:8px}.rsvp>p{font-size:12px;line-height:1.95;color:#625b53}.rsvp form{text-align:left;margin-top:32px}.rsvp label{display:block;font-size:11px;margin-bottom:18px}.rsvp input,.rsvp select,.rsvp textarea{display:block;width:100%;background:transparent;border:0;border-bottom:1px solid #bdb5ab;border-radius:0;padding:12px 2px 11px;margin-top:4px;font-size:12px;color:var(--ink);outline-offset:3px}.solid-btn{width:100%;border:0;background:#141312;color:white;padding:15px;font-size:12px;margin-top:5px}.note{font-size:10px!important;color:#9a9289!important;margin-top:15px}.closing{height:640px;position:relative;color:#fff}.closing>img{width:100%;height:100%;object-fit:cover;object-position:center}.closing-overlay{position:absolute;inset:0;background:linear-gradient(180deg,#071523b5,#0a142066)}.closing-content{position:absolute;inset:0;padding:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.closing-names{position:absolute;top:35px;left:28px;text-align:left;font:500 9px/1.8 'Manrope',sans-serif;letter-spacing:.2em}.closing-line{width:1px;height:40px;background:#ffffffaa;margin-bottom:28px}.closing-copy{font-size:15px;line-height:2.0}.closing-content>span{font:500 9px 'Manrope',sans-serif;letter-spacing:.2em;margin-top:25px}footer{text-align:center;padding:34px 20px 40px}footer button{border:0;background:none;text-decoration:underline;text-underline-offset:5px;font-size:12px}footer p{font:500 8px 'Manrope',sans-serif;letter-spacing:.25em;color:#9d958c;margin:28px 0 0}.reveal{opacity:0;transform:translateY(18px);transition:opacity .75s,transform .75s}.reveal.visible{opacity:1;transform:none}.toast{position:fixed;z-index:40;bottom:28px;left:50%;transform:translateX(-50%);background:#24211e;color:#fff;padding:11px 16px;font-size:11px;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90vw;text-align:center}.toast.show{opacity:1}@media(min-width:481px){.hero-copy h1{font-size:82px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+body{letter-spacing:-.01em;background:#ece7df}
+.section-no{letter-spacing:.24em;color:#9b907f}
+.hero-copy{bottom:14%}
+.hero-copy h1{font-size:clamp(54px,14.2vw,76px);line-height:.78;margin:0 -12px 26px;letter-spacing:.01em}
+.hero-copy p{letter-spacing:.24em}
+.invitation,.wedding,.location,.gallery,.gift,.rsvp{padding:82px 28px}
+.inv-copy{font-size:14px;line-height:1.9;color:#47413a}
+.couple-names{font-family:'Cormorant Garamond','Noto Serif KR',serif;font-size:16px;letter-spacing:.22em;color:#3b352f}
+.family{font-size:10.8px;line-height:2;color:#80796f}
+.wedding{background:#f5f1ea}
+.date-art{margin-bottom:18px}
+.date-art span{margin-top:10px;letter-spacing:.32em}
+.date-intro{font-size:12.5px;line-height:1.85;margin:28px 0 24px;color:#4e473f}
+.calendar-row{margin:16px 0 14px}
+.calendar-grid{gap:10px 3px}
+.calendar-grid span{height:24px}
+.calendar-save{border-radius:10px;background:#8e7a66;box-shadow:0 8px 24px #8a745510}
+.location-head h2{font:500 28px/1 'Cormorant Garamond','Noto Serif KR',serif;letter-spacing:-.03em}
+.location-head p{font-size:12.5px;line-height:1.75;color:#6f675e}
+.map-frame{border:1px solid #e4ded4;background:#f8f5ef;padding:10px}
+.map-image{display:block;width:100%;height:auto;border-radius:2px}
+.copy-address{padding-top:14px;font-size:11.5px}
+.transport-buttons{grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 34px}
+.transport-buttons a{border:1px solid #dfd8cf;background:#fbf8f3;padding:14px 4px 12px;border-radius:16px;display:flex;flex-direction:column;gap:8px;align-items:center;font-size:10px;color:#4c453d}
+.transport-buttons svg{width:22px;height:22px;display:block}
+.transport-buttons b{display:none}
+.parking{border-top:1px solid var(--line);padding-top:22px}
+.parking h3{margin-bottom:10px}
+.parking p{font-size:11.5px;line-height:1.95}
+.gallery{padding-bottom:72px}
+.static-gallery .photo-tile{cursor:default}
+.static-gallery .photo-tile img{transition:none}
+.static-gallery .photo-tile:hover img{transform:none}
+.gift h2,.rsvp h2{font:500 26px/1.15 'Cormorant Garamond','Noto Serif KR',serif;letter-spacing:-.02em}
+.gift-copy,.rsvp>p{font-size:12.5px;line-height:1.9}
+.tabs button{font-size:12px}
+.rsvp-visual{height:210px}
+.date-card small{letter-spacing:.22em}
+footer button{font-size:12px;color:#47413a}
+footer p{letter-spacing:.22em}
+@media(min-width:481px){.hero-copy h1{font-size:76px}}
+
+/* v10 invitation — approved reference screenshot photo size and whitespace. */
+.invitation{padding-top:58px;padding-bottom:66px;min-height:800px}
+.invitation .section-no{margin-bottom:76px}
+.invitation .inv-photo{display:block;width:55%;max-width:242px;height:auto;object-fit:contain;object-position:center;margin:0 auto;filter:grayscale(1)}
+.invitation .inv-copy{margin-top:100px;margin-bottom:0;font-size:13px;line-height:2.0;letter-spacing:-.03em}
+.invitation .hairline{margin-top:72px;margin-bottom:30px}
+.invitation .couple-names{margin-bottom:24px}
+@media(max-width:360px){.invitation .section-no{margin-bottom:60px}.invitation .inv-copy{margin-top:75px}.invitation .hairline{margin-top:56px}}
+
+/* V11: photo-forward editorial templates for location, gift, and RSVP */
+.location,.gift,.rsvp{padding:65px 26px 76px;background:#f8f5ef;color:#302b27}
+.location .section-no,.gift .section-no,.rsvp .section-no{text-align:center;margin-bottom:26px}
+.feature-photo{width:100%;position:relative;margin:0 0 0;overflow:hidden;background:#ded5c8}
+.location-photo img{display:block;width:100%;height:255px;object-fit:cover;object-position:center;}
+.photo-placeholder{height:255px;width:100%;background:linear-gradient(128deg,#b6aca0 0%,#e7dfd4 42%,#c8bfb2 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#665d55;gap:11px;padding:18px;box-shadow:inset 0 0 80px #fff8}
+.photo-placeholder:before{content:"";position:absolute;inset:16px;border:1px solid #ffffff83;pointer-events:none}
+.placeholder-rule{height:25px;width:1px;background:#857869}
+.placeholder-eyebrow{font:500 9px 'Manrope',sans-serif;letter-spacing:.30em}
+.placeholder-main{font:italic 30px 'Cormorant Garamond',serif;letter-spacing:.01em;color:#514940}
+.placeholder-small{font-size:10px;letter-spacing:-.02em;color:#756b60}
+.location-info{padding:27px 10px 21px}
+.info-kicker{font-size:12px;margin:0 0 7px;color:#7d7469}
+.location .location-info h2{font-family:'Noto Serif KR',serif;font-weight:400;font-size:22px;letter-spacing:-.06em;margin:0 0 13px}
+.location .address-line{font-size:13px;line-height:1.75;margin:0;color:#655c53}
+.location .copy-address{display:inline-block;margin-top:9px;padding:5px 0;color:#746b61;text-decoration:none;font-size:11px}
+.map-preview{display:block;border:0;height:187px;overflow:hidden;margin:0 8px 25px;background:#eae6df}
+.map-placeholder{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;position:relative;color:#665b50;font-size:11px;background:repeating-linear-gradient(15deg,transparent 0 37px,#d2ccc2 38px 40px,transparent 41px 80px),repeating-linear-gradient(107deg,transparent 0 48px,#d9d3c9 49px 53px,transparent 54px 102px),#efebe5}
+.map-placeholder:before{content:"";position:absolute;inset:0;background:#f3efe9a8}
+.map-placeholder>*{position:relative;z-index:1}
+.map-pin-symbol{display:grid;place-items:center;width:39px;height:39px;background:#635950;color:white;border-radius:50%;font:24px Arial}
+.map-placeholder strong{font-weight:500;font-size:13px}
+.transport-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;text-align:center;margin:0 0 28px}
+.transport-buttons a{display:flex;align-items:center;flex-direction:column;border:none;background:transparent;padding:0 0 4px;gap:10px;color:#61594f;font-size:10.5px}
+.transport-icon{width:55px;height:55px;display:grid;place-items:center;border:1px solid #d7d1c7;border-radius:50%;background:#f9f7f2}
+.transport-icon svg{width:23px;height:23px;fill:none;stroke:#5a534a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.location .parking{padding:20px 9px 0;border-top:1px solid #ded8cf}
+.location .parking h3{font:400 13px 'Noto Serif KR',serif;letter-spacing:0;margin-bottom:9px}
+.location .parking p{font-size:11px;line-height:1.85;margin:0;color:#857b70}
+.gift .gift-inner{padding:30px 13px 3px}
+.gift .gift-inner h2{font:400 18px/1.8 'Noto Serif KR',serif;letter-spacing:-.05em;margin:0 0 22px;text-align:left}
+.gift .gift-copy{font-size:12.5px;line-height:2.05;color:#6d6258;margin:0 0 30px}
+.subtle-divider{height:1px;width:100%;background:#ded8d0;margin:31px 0 12px}
+.gift .tabs{margin:0 0 14px;border-bottom:1px solid #d6cfc7}
+.gift .tabs button{font-size:12px;padding:15px}
+.gift .gift-panel{background:transparent;border:0;border-bottom:1px solid #ded8d0;padding:22px 6px;line-height:1.8;text-align:left;color:#897f75;font-size:12px}
+.gift-footnote{font-size:11px;line-height:1.8;text-align:center;color:#8b8176;margin:24px 0 0}
+.rsvp .rsvp-inner{padding:32px 12px 0;text-align:center}
+.rsvp .rsvp-inner h2{font:400 21px/1.6 'Noto Serif KR',serif;margin:0 0 25px}
+.rsvp .rsvp-intro{font-size:13px;line-height:2.05;margin:0;word-break:keep-all;color:#6d635a}
+.rsvp .subtle-divider{width:45px;margin:29px auto 22px}
+.rsvp form{margin:0;text-align:left}
+.rsvp .rsvp label{font-size:12px}
+.rsvp .rsvp input,.rsvp .rsvp select,.rsvp .rsvp textarea{font-size:12px;background:#fbf9f4}
+.rsvp .solid-btn{margin-top:15px;background:#242321;padding:16px;font-size:12px}
+.rsvp .solid-btn span{padding-left:10px}
+.rsvp .note{margin:20px 0 0}
+@media(max-width:350px){.transport-icon{width:46px;height:46px}.transport-buttons a{font-size:9px}}
+
+/* v12: refined RSVP flow + image treatment */
+.feature-photo.gift-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.rsvp-view[hidden],.guest-admin[hidden],#customPartyLabel[hidden],#partyGroup[hidden]{display:none!important}
+.rsvp-view{animation:rsvp-in .25s ease-out}
+@keyframes rsvp-in{from{opacity:.3;transform:translateY(7px)}to{opacity:1;transform:none}}
+.rsvp-inner{padding-bottom:35px}
+.rsvp-choice-buttons{display:grid;gap:12px;margin:35px auto 18px;max-width:330px}
+.rsvp-primary,.rsvp-secondary{width:100%;min-height:52px;border:1px solid #7e7165;border-radius:5px;display:flex;align-items:center;justify-content:center;gap:15px;font-size:14px;line-height:1.6;letter-spacing:.02em;padding:14px 18px}
+.rsvp-primary{background:#76675b;color:#fff}
+.rsvp-secondary{background:transparent;color:#423a33}
+.rsvp-choice-buttons span{font-size:21px;line-height:1}
+.rsvp-back{display:block;margin:-4px 0 20px;padding:8px 0;border:0;background:none;color:#75675a;font-size:12px}
+.rsvp #rsvpDetail h2{font-size:23px;margin:8px 0 22px}
+.rsvp #rsvpDetail .rsvp-intro{font-size:13px;line-height:2}
+.rsvp #rsvpDetail form{margin-top:35px}
+.rsvp #rsvpDetail label{font-size:13px}
+.rsvp #rsvpDetail input[type=text],.rsvp #rsvpDetail input:not([type]){background:#fff9;border:1px solid #ded5cb;border-radius:5px;margin-top:12px;padding:14px;font-size:14px}
+.rsvp #rsvpDetail fieldset{padding:0;margin:32px 0 38px;border:0}
+.rsvp #rsvpDetail legend{font-size:13px;margin-bottom:14px}
+.party-choices{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.party-choices label{margin:0!important;cursor:pointer;text-align:center}
+.party-choices input{position:absolute;opacity:0;pointer-events:none;width:1px!important}
+.party-choices span{display:block;padding:13px 0;border:1px solid #d6ccc0;border-radius:4px;background:#fff8;font-size:12px;white-space:nowrap}
+.party-choices input:checked+span{background:#76675b;border-color:#76675b;color:white}
+.party-choices input:focus-visible+span{outline:2px solid #4f433a;outline-offset:2px}
+#customPartyLabel{margin-top:15px!important}
+#customParty{margin-top:8px!important}
+.field-hint{font-size:11px;color:#978b81;line-height:1.7;margin-top:12px}
+.required{color:#8c6250}
+.rsvp .solid-btn{background:#77685b;border-radius:5px;font-size:13px;padding:16px}
+#rsvpDone{padding:34px 2px 18px;text-align:center}
+#rsvpDone .done-mark{display:block;font:60px Georgia,serif;color:#9d8574;margin:0 0 30px}
+#rsvpDone .rsvp-secondary{margin-top:35px}
+.rsvp .note{margin:24px auto 0;max-width:320px;line-height:1.8}
+.admin-link{display:block!important;text-decoration:none!important;opacity:.6;font-size:10px!important;margin:24px auto 0;padding:10px}
+.guest-admin{background:#f9f6f1;border-top:1px solid #e2d9ce;padding:60px 26px 70px;color:#3e3934}
+.admin-inner{max-width:420px;margin:0 auto}
+.admin-top{display:flex;justify-content:space-between;align-items:center}
+.admin-top h2{font-size:23px;font-weight:400;margin:0}
+.admin-top button{border:0;background:none;font-size:26px;color:#6f6358}
+.admin-mode{font-size:11px;color:#8c7c70;line-height:1.8;margin:16px 0 26px}
+.admin-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:30px}
+.admin-summary div{text-align:center;border:1px solid #e2d9ce;padding:15px 5px;font-size:10px;color:#7b7066;background:#fff9}
+.admin-summary b{display:block;font:400 26px Georgia,serif;margin-top:9px;color:#3c322b}
+.admin-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #d1c4b5}
+.admin-tabs button{border:0;background:none;padding:15px 4px;font-size:12px;color:#8c8178}
+.admin-tabs button.active{color:#3d352e;border-bottom:1px solid #473b31}
+.admin-table table{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px}
+.admin-table th,.admin-table td{padding:13px 6px;border-bottom:1px solid #e9e0d7;text-align:left;vertical-align:top;word-break:break-word}
+.admin-table th{font-weight:500;color:#82766a;background:#f2ece5}
+.admin-table .empty{text-align:center;color:#92857a;font-size:12px;padding:40px 0}
+.admin-export{width:100%;margin-top:18px;padding:13px;background:none;border:1px solid #b9ac9f;border-radius:5px;font-size:12px;color:#594e43}
+
+/* V13: rounded editorial venue, photo layout, RSVP */
+.location{background:#f7f5f0}
+.location-photo{overflow:hidden;border-radius:18px}
+.location-photo img{width:100%;height:255px;object-fit:cover;display:block}
+.location-accent{display:flex;justify-content:space-between;margin:14px 2px 2px;color:#9b9186;letter-spacing:.20em;font:500 9px 'Manrope',sans-serif}
+.location .modern-location-info{margin-top:19px;background:#fffdf9;border:1px solid #eee9e2;border-radius:19px;padding:26px 20px 20px;box-shadow:0 12px 28px #32211408}
+.location .modern-location-info h2{font-size:26px;letter-spacing:-.05em;margin-bottom:8px}
+.location .modern-location-info .info-kicker{font-size:10px;letter-spacing:.12em}
+.location .modern-location-info .address-line{font-size:12px}
+.location .copy-address{background:#eee9e2;border-radius:50px;padding:9px 14px;margin-top:16px;font-size:11px}
+.location .map-preview{border-radius:18px;margin:15px 0 24px;height:175px;border:1px solid #e7dfd6;box-shadow:0 10px 25px #32211409}
+.location .map-placeholder{background:repeating-linear-gradient(25deg,transparent 0 42px,#dcd4ca 43px 45px,transparent 46px 78px),repeating-linear-gradient(110deg,transparent 0 50px,#dbd4cb 51px 54px,transparent 55px 98px),#f1ede7}
+.location .transport-buttons a{gap:8px;font-size:10px}
+.location .transport-icon{width:53px;height:53px;border-radius:17px;background:#fffdfb;border:1px solid #e5ded6}
+.location .parking{margin-top:8px;border:1px solid #eee7df;background:#fffdf9;border-radius:17px;padding:22px 19px}
+.location .parking h3{font-size:13px}
+.gallery{background:#f8f7f4;padding-top:76px;padding-bottom:82px}
+.gallery-editorial-head{text-align:left;margin:6px 0 29px}
+.gallery-editorial-head>span{display:block;font:500 9px 'Manrope',sans-serif;letter-spacing:.26em;color:#9c9184;margin-bottom:10px}
+.gallery-editorial-head h2{font:400 42px/1.1 'Cormorant Garamond',serif;margin:0 0 19px;letter-spacing:-.04em;color:#3c342d}
+.gallery-head-rule{height:1px;background:#dcd6ce;width:100%}
+.gallery-editorial-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:12px;align-items:start}
+.gallery-shot{margin:0;min-width:0}
+.gallery-shot img{width:100%;display:block;object-fit:cover;border-radius:4px;filter:saturate(.72)}
+.gallery-shot figcaption{display:flex;justify-content:space-between;font:500 9px 'Manrope',sans-serif;letter-spacing:.06em;color:#8e857b;margin-top:9px}
+.gallery-shot figcaption span{letter-spacing:.1em;text-transform:uppercase}
+.gallery-shot.shot-one{grid-row:span 2}
+.gallery-shot.shot-one img{height:360px}
+.gallery-shot.shot-two img{height:194px}
+.gallery-shot.shot-three img{height:235px}
+.gallery-shot.shot-four{grid-column:1 / -1;margin-top:7px}
+.gallery-shot.shot-four img{height:240px}
+.gallery-tail{margin:50px 0 0;text-align:center;color:#96897d;font:400 10px/2 'Manrope',sans-serif;letter-spacing:.18em}
+.gallery-tail span{margin:0 8px}
+.rsvp{background:#f7f4ee}
+.rsvp-photo{border-radius:16px;overflow:hidden}
+.rsvp-photo img{display:block;width:100%;height:235px;object-fit:cover;object-position:center}
+.rsvp-inner{background:#fffdf9;border:1px solid #efe9e2;border-radius:20px;margin-top:19px;padding:29px 19px 22px;box-shadow:0 10px 25px #32211408}
+.rsvp .rsvp-intro{line-height:2.0}
+.rsvp-choice-buttons{grid-template-columns:1fr 1fr;gap:10px;max-width:none}
+.rsvp-primary,.rsvp-secondary{min-height:55px;border-radius:12px;font-size:12px;gap:0;padding:12px 7px}
+.rsvp-primary{background:#322d28;border-color:#322d28}
+.rsvp-secondary{background:#fff;border-color:#d6ccc0}
+.rsvp-choice-buttons span{display:none}
+.rsvp #rsvpDetail input[type=text],.rsvp #rsvpDetail input:not([type]),.party-choices span{border-radius:12px}
+.rsvp .solid-btn{background:#322d28;border-radius:12px}
+@media(max-width:420px){.gallery-shot.shot-one img{height:290px}.gallery-shot.shot-two img{height:160px}.gallery-shot.shot-three img{height:205px}.gallery-shot.shot-four img{height:206px}}
+
+/* v14: Photo section without editorial headline or footer */
+.gallery-editorial-head{padding-bottom:16px!important;}
+.gallery-editorial-head span{margin-bottom:0!important;}
+.gallery-tail{display:none!important;}
+.gift-photo img{object-fit:cover;object-position:center 50%;}
+
+
+/* v16 photo gallery update */
+.gallery{background:#f8f7f4;padding-top:76px;padding-bottom:84px}
+.gallery-editorial-head{text-align:left;margin:6px 0 24px}
+.gallery-editorial-head>span{display:block;font:500 9px 'Manrope',sans-serif;letter-spacing:.26em;color:#9c9184;margin-bottom:12px}
+.gallery-head-rule{height:1px;background:#dcd6ce;width:100%}
+.gallery-masonry{columns:2;column-gap:12px;text-align:left}
+.gallery-card{break-inside:avoid;display:inline-block;width:100%;margin:0 0 12px;position:relative}
+.gallery-card img{width:100%;display:block;border-radius:6px;object-fit:cover;box-shadow:0 10px 24px #00000010;filter:saturate(.88)}
+.gallery-card:nth-child(1) img,.gallery-card:nth-child(5) img,.gallery-card:nth-child(7) img{aspect-ratio:2/3}
+.gallery-card:nth-child(2) img,.gallery-card:nth-child(3) img,.gallery-card:nth-child(4) img,.gallery-card:nth-child(6) img{aspect-ratio:2/3}
+@media(max-width:420px){.gallery-masonry{column-gap:10px}.gallery-card{margin-bottom:10px}}
+
+/* v19: single portrait, balanced invitation layout */
+.invitation{padding-top:62px;padding-bottom:68px;min-height:unset}
+.invitation .section-no{margin-bottom:30px}
+.invitation .inv-photo{width:56%;max-width:238px;height:auto;margin:0 auto;object-fit:contain;filter:none}
+.invitation .inv-copy{margin:38px 0 0;font-size:13px;line-height:1.95}
+.invitation .hairline{margin:33px auto 22px}
+.invitation .couple-names{margin-bottom:17px}
+@media(max-width:360px){.invitation .section-no{margin-bottom:22px}.invitation .inv-copy{margin-top:30px}.invitation .hairline{margin-top:28px}}
+
+/* v21: restore color in the existing invitation photo size */
+.invitation .inv-photo{filter:none!important}
+
+/* v21 wedding account UI */
+.gift .account-list{padding:0!important;border:0!important;background:transparent!important;}
+.gift .gift-tabs{margin-bottom:10px}
+.gift .gift-tabs button{transition:color .2s,border-color .2s;font-size:13px;padding:14px 5px;}
+.account-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 4px;border-bottom:1px solid #ded8d0;min-width:0;}
+.account-info{display:grid;grid-template-columns:56px minmax(0,1fr);gap:6px 8px;flex:1;min-width:0;align-items:center}
+.account-role{font-size:10px;color:#998b7c;letter-spacing:-.02em}
+.account-name{font-size:13px;font-weight:400;color:#42382f}
+.account-details{grid-column:2;display:block;min-width:0;overflow-wrap:anywhere;font:400 11.5px/1.6 'Manrope','Noto Serif KR',sans-serif;color:#72675d;letter-spacing:0}
+.account-copy{border:1px solid #dbd2c5;background:#fbf8f3;color:#6b5e51;border-radius:11px;min-width:52px;min-height:50px;padding:7px 5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;flex-shrink:0;font:400 10px 'Noto Serif KR',serif}
+.account-copy svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+.account-copy:active{background:#e8dfd4}
+.account-copy:focus-visible{outline:2px solid #8f7d69;outline-offset:2px}
+
+
+/* v22 – curated editorial gallery. Photos remain unzoomable; no cropping. */
+.gallery-refined{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;row-gap:12px;align-items:start}
+.gallery-refined .gallery-item{margin:0;min-width:0;background:#f2eee7;overflow:hidden;border-radius:5px}
+.gallery-refined .gallery-item img{display:block;width:100%;height:auto;max-width:100%;filter:saturate(.93)}
+.gallery-refined .gallery-item.is-feature{grid-column:1 / -1;width:74%;justify-self:center}
+.gallery-refined .gallery-item:nth-child(7){width:88%;}
+.gallery-refined .gallery-item:nth-child(1){margin-bottom:13px}
+.gallery-refined .gallery-item:nth-child(7){margin-top:14px;margin-bottom:12px}
+.gallery-refined .gallery-item:nth-child(8){grid-column:1/-1;width:66%;justify-self:center}
+@media(max-width:360px){.gallery-refined{column-gap:8px;row-gap:8px}}
+
+/* v23 full-view gallery: one-tap full-screen fit, no image zoom */
+.gallery-refined .gallery-item{cursor:zoom-in}
+.gallery-refined .gallery-item:focus-visible{outline:3px solid #8c7e70;outline-offset:4px}
+.photo-viewer[hidden]{display:none!important}
+.photo-viewer{position:fixed;inset:0;z-index:3000;background:rgba(10,10,11,.97);display:flex;align-items:center;justify-content:center;overflow:hidden;overscroll-behavior:contain;touch-action:pan-y;padding:62px 12px 48px}
+.photo-viewer img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:none;pointer-events:none}
+.photo-viewer-close{position:absolute;z-index:2;top:max(16px, env(safe-area-inset-top));right:18px;width:44px;height:44px;border-radius:50%;border:1px solid #ffffff65;background:#292929ba;color:#fff;font:300 32px/1 sans-serif;display:grid;place-items:center;cursor:pointer}
+.photo-viewer-hint{position:absolute;bottom:max(12px, env(safe-area-inset-bottom));left:0;right:0;text-align:center;color:#ffffff91;font:400 10px 'Manrope',sans-serif;letter-spacing:.03em;pointer-events:none}
+body.photo-viewer-open{overflow:hidden}
+
+/* v25 - curated photo gallery */
+#gallery .gallery-refined.gallery-curated{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;align-items:stretch;margin:0 auto;max-width:440px}
+#gallery .gallery-refined.gallery-curated .gallery-item{grid-column:auto;grid-row:auto;width:100%;margin:0;min-width:0;justify-self:stretch;aspect-ratio:3/4;border-radius:3px;overflow:hidden;background:#ebe6df;cursor:pointer;box-shadow:none}
+#gallery .gallery-refined.gallery-curated .gallery-item.gallery-feature{grid-column:1/-1;width:100%;aspect-ratio:4/5}
+#gallery .gallery-refined.gallery-curated .gallery-item img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0;filter:none;transition:transform .3s ease}
+#gallery .gallery-refined.gallery-curated .gallery-item:focus-visible{outline:3px solid #786b5e;outline-offset:3px}
+#gallery .gallery-refined.gallery-curated .gallery-item:hover img{transform:scale(1.015)}
+/* viewer navigation */
+.photo-viewer .photo-viewer-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:48px;display:grid;place-items:center;border:0;border-radius:24px;background:#2229;color:#fff;font:400 36px/1 Georgia,serif;cursor:pointer;touch-action:manipulation}
+.photo-viewer .photo-viewer-prev{left:max(8px,env(safe-area-inset-left))}
+.photo-viewer .photo-viewer-next{right:max(8px,env(safe-area-inset-right))}
+.photo-viewer .photo-viewer-count{position:absolute;bottom:calc(51px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);color:#fff;letter-spacing:.18em;font:500 11px/1.4 Arial,sans-serif;z-index:3}
+.photo-viewer #photoViewerImg{max-width:calc(100vw - 84px);max-height:calc(100dvh - 124px);width:auto;height:auto;object-fit:contain;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+@media(max-width:420px){#gallery .gallery-refined.gallery-curated{gap:8px}}
+
+/* v26: landscape monochrome kiss photograph on invitation page */
+.invitation .inv-photo{display:block;width:82%;max-width:360px;height:auto;object-fit:contain;filter:none!important;margin:0 auto;}
+.invitation .inv-copy{margin-top:36px;}
+
+/* v27: show the complete approved portrait, centered as in the reference page. */
+.invitation .inv-photo{width:68%;height:auto;max-height:none;object-fit:contain;object-position:center;aspect-ratio:auto;display:block;margin:0 auto;}
+
+/* v28: gift image removed; collapse image space and refine section rhythm */
+.gift .section-no{margin-bottom:24px}
+.gift .gift-inner{padding-top:8px!important}
+.gift .gift-inner h2{margin-bottom:18px}
+.gift .gift-copy{margin-bottom:25px}
+
+/* v30: only scale down 2nd section invitation photo; keep full portrait uncropped */
+#invitation .inv-photo{width:58%!important;max-width:260px!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important;margin-left:auto!important;margin-right:auto!important;}
+
+/* v31: functional review refinements */
+.calendar-row-fixed{display:flex;justify-content:center;align-items:center}
+.rsvp-privacy-note{text-align:center;max-width:320px;margin:19px auto 0;font-size:10px;color:#897b6f;line-height:1.8;word-break:keep-all}
+
+
+/* v38: understated editorial motion — no layout or content changes */
+@keyframes w38HeroReveal {from{opacity:0;transform:translateY(23px)}to{opacity:1;transform:translateY(0)}}
+@keyframes w38HeroImage {from{transform:scale(1.075);filter:brightness(.82)}to{transform:scale(1);filter:brightness(1)}}
+@keyframes w38Nudge {0%,100%{transform:translateY(0)}55%{transform:translateY(7px)}}
+@keyframes w38ViewerShow {from{opacity:0}to{opacity:1}}
+@keyframes w38ViewerImg {from{opacity:.65;transform:scale(.975)}to{opacity:1;transform:scale(1)}}
+@keyframes w38PanelSwitch {from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hero{isolation:isolate}
+.hero>img{animation:w38HeroImage 2.8s cubic-bezier(.16,1,.3,1) both}
+.hero-top{animation:w38HeroReveal .95s .2s both}
+.hero-copy h1{animation:w38HeroReveal 1.25s .48s cubic-bezier(.16,1,.3,1) both}
+.hero-copy p{animation:w38HeroReveal 1s .94s both}
+.hero .scroll{animation:w38HeroReveal .9s 1.5s both}
+.hero .scroll span{animation:w38Nudge 2.5s 2.6s ease-in-out infinite}
+/* Start hidden only after JS has activated the observer. */
+.motion-ready .motion-item{opacity:0;transform:translateY(28px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .95s cubic-bezier(.2,.7,.2,1);transition-delay:var(--motion-delay,0ms)}
+.motion-ready .motion-item.motion-in{opacity:1;transform:translateY(0)}
+.motion-ready .gallery-item.motion-item{transform:translateY(24px) scale(.985)}
+.motion-ready .gallery-item.motion-item.motion-in{transform:translateY(0) scale(1)}
+.motion-ready .inv-photo.motion-item{transform:translateY(28px) scale(.975)}
+.motion-ready .inv-photo.motion-item.motion-in{transform:translateY(0) scale(1)}
+.motion-ready .closing-line.motion-item{transform:scaleY(.25);transform-origin:top}
+.motion-ready .closing-line.motion-item.motion-in{transform:scaleY(1)}
+.calendar-save,.transport-buttons a,.account-copy,.gift-tabs button,.map-preview,#shareBtn{transition:transform .32s ease,background-color .32s ease,box-shadow .32s ease,opacity .32s ease}
+@media(hover:hover){.calendar-save:hover,.transport-buttons a:hover,.map-preview:hover{transform:translateY(-3px);box-shadow:0 9px 20px #2c22171a}.account-copy:hover,#shareBtn:hover{transform:translateY(-2px)}}
+.calendar-save:active,.transport-buttons a:active,.account-copy:active{transform:scale(.985)}
+.gift-panel.account-list{animation:w38PanelSwitch .45s ease both}
+.photo-viewer:not([hidden]){animation:w38ViewerShow .24s ease-out both}
+.photo-viewer:not([hidden]) #photoViewerImg{animation:w38ViewerImg .32s cubic-bezier(.2,.7,.2,1) both}
+@media(prefers-reduced-motion:reduce){
+ .hero>img,.hero-top,.hero-copy h1,.hero-copy p,.hero .scroll,.hero .scroll span,.photo-viewer,.photo-viewer #photoViewerImg,.gift-panel.account-list{animation:none!important}
+ .motion-ready .motion-item,.motion-ready .gallery-item.motion-item,.motion-ready .inv-photo.motion-item,.motion-ready .closing-line.motion-item{opacity:1!important;transform:none!important;transition:none!important}
+}
+
+
+/* v40 — smoother native scrolling, preserve graceful on-entry motion */
+html, body{scroll-behavior:auto;overscroll-behavior-y:auto}
+.site{overflow:clip}
+@supports not (overflow:clip){.site{overflow:visible}}
+#parking{scroll-margin-top:20px}
+#gallery .gallery-refined.gallery-curated .gallery-item{contain:layout paint}
+.motion-ready .motion-item{transition-duration:.6s,.68s}
+@media (hover:none){#gallery .gallery-refined.gallery-curated .gallery-item:hover img{transform:none}}
+/* v40 — practical transport details */
+.location .parking{padding-top:25px}
+.location .parking h3{font-size:14px;margin-bottom:18px;color:#463b34}
+.parking-guide{display:flex;flex-direction:column;gap:15px}
+.parking-guide-row{padding-bottom:15px;border-bottom:1px solid #e6e0d8}
+.parking-guide-row:last-child{border-bottom:0;padding-bottom:3px}
+.parking-guide-title{display:block;color:#675849;font-weight:500;font-size:11.5px;margin-bottom:7px}
+.location .parking .parking-guide-row p{color:#756c62;font-size:11px;line-height:1.95;word-break:keep-all}
+.location .parking .parking-guide-row strong{font-weight:500;color:#54483c}
+.location .parking .parking-guide-row .parking-guide-caution{font-size:10px;color:#a0917e;line-height:1.8}
+.location .parking .parking-contact{margin-top:16px;font-size:10px;color:#8e8175}
+.parking-contact a{border-bottom:1px solid #aaa095}
+/* v41 — static map guide image and concise transport info */
+.map-guide-card{display:block;margin:22px 0 8px;text-decoration:none}
+.map-guide-card img{display:block;width:100%;height:auto;border-radius:2px;border:1px solid #ddd5cb;background:#f2efe9}
+.map-guide-caption{display:block;margin-top:8px;text-align:right;font:500 10px/1.6 'Manrope',sans-serif;letter-spacing:.03em;color:#8d8176}
+
+
+/* v43 — quiet, compact location presentation */
+.location .modern-location-info{
+ margin-top:13px; padding:16px 19px 15px; border-radius:15px;
+ box-shadow:0 4px 13px #32211406;
+}
+.location .modern-location-info h2{font-size:22px;line-height:1.42;margin:0 0 5px}
+.location .modern-location-info .address-line{font-size:10.5px;line-height:1.85;margin:0;color:#80786e;word-break:keep-all}
+.location .copy-address{font-size:10px;padding:7px 12px;margin-top:9px}
+.location .map-guide-card{margin:24px 0 10px;border-radius:14px;overflow:hidden;background:#fcfaf6;border:1px solid #e8dfd4;box-shadow:0 7px 21px #30241909;}
+.location .map-guide-card img{width:100%;border:0;border-radius:0;display:block}
+.location .map-guide-caption{padding:0 14px 12px;text-align:right;color:#86715f}
+.location .parking{padding:19px 20px 16px;margin-top:6px}
+.location .parking-guide{gap:17px}
+.location .parking-guide-title{font-size:14px;color:#453b32;font-weight:500;letter-spacing:-.02em;line-height:1.6;margin-bottom:9px}
+.location .parking .parking-guide-row p{font-size:11.5px;line-height:1.95}
+.location .parking-guide-row{padding-bottom:16px}
+.location .parking-guide-row:last-child{padding-bottom:0}
+@media(max-width:370px){.location .parking{padding:18px 15px}.location .modern-location-info{padding:16px 15px}}
+
+/* v46: no empty right-hand cell when the photo grid contains an odd-length segment. */
+#gallery .gallery-refined.gallery-curated .gallery-item.gallery-solo {
+  grid-column:1 / -1;
+  aspect-ratio:auto;
+}
+#gallery .gallery-refined.gallery-curated .gallery-item.gallery-solo img {
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+
+/* v52 — touch-first scroll stability and GPU-efficient rendering.
+   Keep the original layout, gallery, lightbox and desktop animations. */
+@media (hover: none), (pointer: coarse) {
+  /* Full-section fades/transforms and nested animated children used to
+     repaint many layers while finger-scrolling on mobile Safari. */
+  .reveal, .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .motion-ready .motion-item,
+  .motion-ready .motion-item.motion-in,
+  .motion-ready .gallery-item.motion-item,
+  .motion-ready .gallery-item.motion-item.motion-in,
+  .motion-ready .inv-photo.motion-item,
+  .motion-ready .inv-photo.motion-item.motion-in,
+  .motion-ready .closing-line.motion-item,
+  .motion-ready .closing-line.motion-item.motion-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    transition-delay: 0ms !important;
+  }
+  /* Avoid costly large-image brightness filters and zoom animations. */
+  .hero>img {
+    animation: none !important;
+    filter: none !important;
+    transform: none !important;
+  }
+  .hero .scroll span { animation: none !important; }
+  .gift-panel.account-list {animation: none !important;}
+  #gallery .gallery-refined.gallery-curated .gallery-item img {
+    transition: none !important;
+    transform: none !important;
+  }
+  /* Keep tap feedback, remove animations of large lightbox layers. */
+  .photo-viewer:not([hidden]),
+  .photo-viewer:not([hidden]) #photoViewerImg { animation: none !important; }
+}
+/* Lower the cost of the full-width hero animation on larger screens too. */
+@keyframes w52HeroImageLite {from{transform:scale(1.025)}to{transform:scale(1)}}
+@media (hover: hover) and (pointer: fine) {
+  .hero>img {animation:w52HeroImageLite 1.4s ease-out both}
+}
