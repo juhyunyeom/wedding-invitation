@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="535" viewBox="0 0 720 535" role="img" aria-labelledby="title desc">
+<title id="title">더바실리움 약도</title>
+<desc id="desc">야탑역 4번 출구에서 서쪽으로 장미마을과 KT분당 ICC 방향으로 이동하면 더바실리움이 위치합니다.</desc>
+<rect width="720" height="535" rx="18" fill="#f7f2e9"/>
+<rect x="17" y="17" width="686" height="501" rx="12" fill="#fcfaf6" stroke="#e9e0d4" stroke-width="1.5"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M44 83 V449" stroke="#b1a89d" stroke-width="15"/>
+<path d="M107 89 V441 M173 91 V438" stroke="#d4c9bc" stroke-width="10"/>
+<path d="M111 127 H674 M173 239 H656 M173 312 H530 M33 377 H667 M33 444 H674" stroke="#d5cabb" stroke-width="11"/>
+<path d="M344 126 V240 M373 239 V312 M531 312 V378 M652 95 V453" stroke="#d5cabb" stroke-width="11"/>
+<path d="M173 239 V448" stroke="#d5cabb" stroke-width="12"/>
+</g>
+<!-- A subtle dotted route from Yatap station to venue, based on the supplied directions. -->
+<path d="M652 222 V127 H242 V239 H199 V213" fill="none" stroke="#a88363" stroke-width="3.5" stroke-dasharray="5 10" stroke-linecap="round" opacity=".72"/>
+<g fill="#7e756a" font-family="NanumGothic,Noto Sans CJK KR,Apple SD Gothic Neo,Malgun Gothic,Arial,sans-serif" text-anchor="middle">
+<text x="470" y="83" font-size="21" letter-spacing="1" fill="#6c6258">장미마을</text>
+<text x="290" y="186" font-size="18">KT분당</text><text x="290" y="211" font-size="15">ICC</text>
+<text x="503" y="190" font-size="16">고속버스터미널</text><text x="503" y="214" font-size="14">CGV 홈플러스</text>
+<text x="292" y="276" font-size="17">대법원 전산</text><text x="292" y="298" font-size="16">정보센터</text>
+<text x="220" y="351" font-size="17">차병원</text>
+<text x="422" y="352" font-size="17">국민은행</text>
+<text x="256" y="422" font-size="16">하탑초등학교</text>
+<text x="133" y="251" font-size="17" letter-spacing="3" writing-mode="tb" glyph-orientation-vertical="0">탄천</text>
+<text x="37" y="274" font-size="13" transform="rotate(-90 37 274)">분당수서간 고속도로</text>
+<text x="50" y="61" font-size="15">서울 ↑</text>
+<text x="52" y="477" font-size="15">↓ 용인</text>
+<text x="651" y="61" font-size="15">↑ 모란역</text>
+<text x="652" y="476" font-size="15">↓ 이매역</text>
+</g>
+<g font-family="NanumGothic,Noto Sans CJK KR,Apple SD Gothic Neo,Malgun Gothic,Arial,sans-serif">
+<rect x="151" y="93" width="184" height="42" rx="20" fill="#5a5045"/>
+<text x="243" y="121" font-size="19" text-anchor="middle" fill="#fffaf2" font-weight="600">더바실리움</text>
+<path d="M243 135 L218 161 L248 152 Z" fill="#5a5045"/>
+<circle cx="213" cy="192" r="35" fill="#e9ddcf" stroke="#b49c81" stroke-width="2"/>
+<path d="M199 210 V180 H227 V210 Z M194 210 H232" fill="none" stroke="#786755" stroke-width="3"/>
+<path d="M202 186 H224 M202 194 H224 M202 202 H224 M208 179 V211 M218 179 V211" fill="none" stroke="#ae9983" stroke-width="1.5"/>
+<circle cx="652" cy="239" r="48" fill="#fcfaf6" stroke="#a78669" stroke-width="3"/>
+<text x="652" y="234" text-anchor="middle" font-size="19" fill="#55493e" font-weight="600">야탑역</text>
+<text x="652" y="258" text-anchor="middle" font-size="15" fill="#766758">4번 출구</text>
+</g>
+<g fill="#b59e83"><circle cx="290" cy="220" r="4"/><circle cx="503" cy="223" r="4"/><circle cx="292" cy="306" r="4"/><circle cx="422" cy="358" r="4"/><circle cx="220" cy="358" r="4"/></g>
+<text x="363" y="498" text-anchor="middle" fill="#a39383" font-family="Georgia,serif" font-size="14" letter-spacing="1.5">THE BASILIUM · MAP GUIDE</text>
+</svg>

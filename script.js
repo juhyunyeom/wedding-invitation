@@ -124,8 +124,8 @@ $('#shareBtn').addEventListener('click',async()=>{if(location.protocol==='file:'
  const groups = [
   ['#invitation .section-no', '#invitation .inv-photo', '#invitation .inv-copy', '#invitation .hairline', '#invitation .couple-names', '#invitation .family'],
   ['#wedding .section-no', '#wedding .date-art', '#wedding .date-intro', '#wedding .calendar-row', '#wedding .calendar-grid', '#wedding .count-wrap', '#wedding .calendar-save'],
-  ['#location .section-no', '#location .location-photo', '#location .location-accent', '#location .location-info', '#location .map-preview', '#location .transport-buttons', '#location .parking'],
-  ['#gallery .section-no', '#gallery .gallery-editorial-head', ...Array.from({length:8},(_,i)=>`#gallery .gallery-item:nth-child(${i+1})`)],
+  ['#location .section-no', '#location .location-photo', '#location .location-accent', '#location .location-info', '#location .map-guide-card', '#location .transport-buttons', '#location .parking'],
+  ['#gallery .section-no', '#gallery .gallery-editorial-head', ...Array.from(document.querySelectorAll('#gallery .gallery-item'),(_,i)=>`#gallery .gallery-item:nth-child(${i+1})`)],
   ['#gift .section-no', '#gift .gift-inner h2', '#gift .gift-copy', '#gift .subtle-divider', '#gift .gift-tabs', '#gift .gift-panel', '#gift .gift-footnote'],
   ['.closing .closing-line', '.closing .closing-copy', '.closing .closing-content>span']
  ];
@@ -152,3 +152,5 @@ $('#shareBtn').addEventListener('click',async()=>{if(location.protocol==='file:'
    if(r.bottom>0 && r.top<window.innerHeight*.82)el.classList.add('motion-in');
  }));
 })();
+
+
