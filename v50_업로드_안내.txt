@@ -1,0 +1,22 @@
+모바일 청첩장 v50 (v49 + 수정사항 통합 및 캐시 개선)
+
+수정사항
+1. 더바실리움 주소 복사: 성공 알림은 ‘주소를 복사했어요’
+2. 셔틀버스: ‘대중교통 이용 시 편리합니다’ 문장 없음
+3. 05 WITH GRATITUDE: 마지막 감사 문장 삭제
+4. 카카오톡 대표 이미지: 첫 페이지 푸른 야경 웨딩사진 (kakao-share-preview-v50.jpg)
+5. 01 INVITATION: 아치형 유리문 앞 웨딩사진 (invitation-page2-doorway-v50.webp)
+6. 사진 11장, 기타 기존 기능 유지 / BGM 없음
+
+업로드
+1) 압축을 풀고 GitHub의 juhyunyeom/wedding-invitation 저장소에 로그인
+2) Code > Add file > Upload files 메뉴에서 해당 폴더 내 모든 파일과 assets 폴더 업로드
+3) 하단 Commit changes 눌러 배포
+4) https://juhyunyeom.github.io/wedding-invitation/?v=50-20261107 주소로 새로 확인
+
+기존 주소는 https://juhyunyeom.github.io/wedding-invitation/ 로 그대로 유지됩니다.
+카카오톡 미리보기는 따로 캐시되므로 Kakao Developers 공유 디버거에서
+https://juhyunyeom.github.io/wedding-invitation/ 주소 캐시 초기화가 필요할 수 있습니다.
+https://developers.kakao.com/tool/debugger/sharing
+
+이 ZIP은 업로드 준비본이며 실제 GitHub에 자동으로 업로드하지 않습니다.
